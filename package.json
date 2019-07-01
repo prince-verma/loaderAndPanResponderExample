@@ -1,0 +1,33 @@
+{
+  "name": "aAaA",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "postinstall": "react-native-port-patcher --new-port 8083 && rndebugger-open --open --port 8083"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "d3": "^5.7.0",
+    "d3-scale": "^2.1.2",
+    "prop-types": "^15.6.2",
+    "react": "16.6.1",
+    "react-native": "0.57.7",
+    "react-native-simple-events": "^1.0.1",
+    "react-native-vector-icons": "^4.6.0",
+    "react-native-webview": "^5.0.6",
+    "react-navigation": "^2.18.2"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.50.0",
+    "react-native-debugger-open": "^0.3.17",
+    "react-native-port-patcher": "^1.0.3",
+    "react-test-renderer": "16.6.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
